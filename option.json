@@ -4,26 +4,23 @@
         "data": ["2011","2012","2013","2014","2015","2016"]
     },
     "radar": {
-        // shape: 'circle',
         "indicator": [
-           { "name": 'JAN', max: 60000},
-           { "name": 'FEB', max: 60000},
-           { "name": 'MAR', max: 60000},
-           { "name": 'APR', max: 60000},
-           { "name": 'MAY', max: 60000},
-           { "name": 'JUN', max: 60000},
-           { "name": 'JUL', max: 60000},
-           { "name": 'AUG', max: 60000},
-           { "name": 'SEP', max: 60000},
-           { "name": 'OCT', max: 60000},
-           { "name": 'NOV', max: 60000},
-           { "name": 'DEC', max: 60000},
+           { "name": 'JAN', "max": 60000},
+           { "name": 'FEB', "max": 60000},
+           { "name": 'MAR', "max": 60000},
+           { "name": 'APR', "max": 60000},
+           { "name": 'MAY', "max": 60000},
+           { "name": 'JUN', "max": 60000},
+           { "name": 'JUL', "max": 60000},
+           { "name": 'AUG', "max": 60000},
+           { "name": 'SEP', "max": 60000},
+           { "name": 'OCT', "max": 60000},
+           { "name": 'NOV', "max": 60000},
+           { "name": 'DEC', "max": 60000},
         ]
     },
     "series": [{
-        "name": '预算 vs 开销（Budget vs spending）',
         "type": 'radar',
-        // areaStyle: {normal: {}},
         "data" : [{
              "value":[43125,38512,43445,42596,42958,42201,44858,44944,42775,44537,43628,46495],
              "name":'2011'
