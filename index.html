@@ -240,92 +240,120 @@
                     <h2 class="section-heading">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Round Icons</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Startup Framework</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
+                
+                    <div id="main" style="width: 600px;height:400px;" class="center"></div>
+                    <script type="text/javascript">
+                            // 基于准备好的dom，初始化echarts实例
+                            var myChart = echarts.init(document.getElementById('main'));
+                                              
+var timeData = ["Central","Admiralty","Tsim Sha Tsui","Jordan","Yau Ma Tei","Mong Kok","Shek Kip Mei","Kowloon Tong","Lok Fu","Wong Tai Sin","Diamond Hill","Choi Hung","Kowloon Bay","Ngau Tau Kok","Kwun Tong","Prince Edward","Sham Shui Po","Cheung Sha Wan","Lai Chi Kok","Mei Foo","Lai King","Kwai Fong","Kwai Hing","Tai Wo Hau","Tsuen Wan","Sheung Wan","Wan Chai","Causeway Bay","Tin Hau","Fortress Hill","North Point","Quarry Bay","Tai Koo","Sai Wan Ho","Shau Kei Wan","Heng Fa Chuen","Chai Wan","Lam Tin","Hong Kong","Kowloon","Olympic","Tsing Yi","Tung Chung","Yau Tong","Tiu Keng Leng","Tseung Kwan O","Hang Hau","Po Lam","Nam Cheong","Sunny Bay","Disneyland Resort","LOHAS Park","Hung Hom","Mong Kok East","Tai Wai","Sha Tin","Fo Tan","Racecourse","University","Tai Po Market","Tai Wo","Fanling","Sheung Shui","Lo Wu","Lok Ma Chau","East Tsim Sha Tsui","Che Kung Temple","Sha Tin Wai","City One","Shek Mun","Tai Shui Hang","Heng On","Ma On Shan","Wu Kai Sha","Austin","Tsuen Wan West","Kam Sheung Road","Yuen Long","Long Ping","Tin Shui Wai","Siu Hong","Tuen Mun","Sai Ying Pun","HKU","Kennedy Town","Ho Man Tin","Whampoa","Ocean Park","Wong Chuk Hang","Lei Tung","South Horizons"
+    ];
+
+var option = {
+    title: {
+        text: 'MTR Fee 2017',
+        x: 'center'
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            animation: false
+        }
+    },
+    legend: {
+        data:['Lo Wu and Lok Ma Chau','Hung Hom'],
+        x: 'left'
+    },
+    toolbox: {
+        feature: {
+            dataZoom: {
+                yAxisIndex: 'none'
+            },
+            restore: {},
+            saveAsImage: {}
+        }
+    },
+    dataZoom: [
+        {
+            show: true,
+            realtime: true,
+            start: 30,
+            end: 70,
+            xAxisIndex: [0, 1]
+        },
+        {
+            type: 'inside',
+            realtime: true,
+            start: 30,
+            end: 70,
+            xAxisIndex: [0, 1]
+        }
+    ],
+    grid: [{
+        left: 50,
+        right: 50,
+        height: '35%'
+    }, {
+        left: 50,
+        right: 50,
+        top: '55%',
+        height: '35%'
+    }],
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            axisLine: {onZero: true},
+            data: timeData
+        },
+        {
+            gridIndex: 1,
+            type : 'category',
+            boundaryGap : false,
+            axisLine: {onZero: true},
+            data: timeData,
+            position: 'top'
+        }
+    ],
+    yAxis : [
+        {
+            name : 'Price($)',
+            type : 'value',
+            max : 80
+        },
+        {
+            gridIndex: 1,
+            name : 'Price($)',
+            type : 'value',
+            inverse: true
+        }
+    ],
+    series : [
+        {
+            name:'Lo Wu and Lok Ma Chau',
+            type:'line',
+            symbolSize: 8,
+            hoverAnimation: false,
+            data:[
+                47.6,47.6,40.4,42.6,41.4,41.4,40.5,38,40.5,40.5,41.4,41.4,42.6,42.6,42.6,40.5,40.5,41.4,41.4,42.6,42.6,44,44,44,44,47.6,47.6,47.6,49.6,49.6,49.6,49.6,49.6,49.6,49.6,49.6,49.6,44,47.6,42.6,41.4,44,52.3,44,44,45.7,45.7,45.7,40.5,49.7,55.3,45.7,38.1,38.1,30.2,30.2,27.8,25.7,27.6,26.2,26.2,24,24,0,24,40.4,30.2,30.2,30.2,30.2,30.2,30.2,30.2,30.2,42.7,44.4,52.5,54,54,54,54,54,47.6,49.6,49.6,42.6,42.6,49.6,49.6,49.6,49.6
+                            ]
+        },
+        {
+            name:'Hung Hom',
+            type:'line',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            symbolSize: 8,
+            hoverAnimation: false,
+            data: [
+                11.3,11.3,4.4,4.5,5.3,5.3,5.3,3.7,5.3,5.3,6.4,6.4,7.6,7.6,7.6,5.3,5.3,6.4,6.4,8,7.6,9.1,9.1,9.1,9.1,11.3,11.3,11.9,13.4,13.4,13.4,13.4,15.4,15.4,15.4,15.4,15.4,9.1,11.3,6.2,6.4,9.1,20.2,9.1,9.1,10.9,10.9,10.9,5.6,16.5,23.6,10.9,0,3.7,5.9,5.9,7.3,14,7.3,9,9,10.2,10.2,38.1,38.1,4.4,7.5,7.5,7.5,7.5,10.2,10.2,10.2,10.2,5.6,10.2,20.1,21.1,21.1,21.1,21.1,21.1,11.9,13.4,13.4,4.5,4.5,13.4,13.4,13.4,15.4
+                            ]
+        }
+    ]
+};
+myChart.setOption(option);
+                </script>
+
             </div>
         </div>
     </section>
