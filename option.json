@@ -5,7 +5,7 @@
     },
     "radar": {
         "indicator": [
-           { "name": 'JAN', "max": 60000},
+           { "name": "JAN", "max": 60000},
            { "name": 'FEB', "max": 60000},
            { "name": 'MAR', "max": 60000},
            { "name": 'APR', "max": 60000},
