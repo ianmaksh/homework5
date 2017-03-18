@@ -85,7 +85,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">2013-2015年旅客流量</h2>
+                    <h2 class="section-heading">2013-2015年旅客流量1</h2>
                     <h3 class="section-subheading text-muted">2013-2015年旅客流量</h3>
                 </div>
                 
@@ -96,138 +96,138 @@
 
                             // 指定图表的配置项和数据
                             var option = {
-    tooltip : {
-        trigger: 'axis',
-        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    legend: {
-        data:["香港國際機場","文錦渡","沙頭角","落馬洲","深圳灣","羅湖","紅磡車站","落馬洲支線","港澳碼頭","中港碼頭"]
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis : [
-        {
-            type : 'category',
-            data : ['2013','2014','2015']
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value'
-        }
-    ],
-    series : [
-        {
-            name:'羅湖',
-            type:'bar',
-            barWidth : 20,
-            data:[92101,87147,83207],
-                        
-            markLine : {
-                lineStyle: {
-                    normal: {
-                        type: 'dashed'
-                    }
-                },
-                
-                data : [
-                    [{type : 'max'}, {type : 'min'}]
-                ]
-            }
+                        tooltip : {
+                            trigger: 'axis',
+                            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                            }
+                        },
+                        legend: {
+                            data:["香港國際機場","文錦渡","沙頭角","落馬洲","深圳灣","羅湖","紅磡車站","落馬洲支線","港澳碼頭","中港碼頭"]
+                        },
+                        grid: {
+                            left: '3%',
+                            right: '4%',
+                            bottom: '3%',
+                            containLabel: true
+                        },
+                        xAxis : [
+                            {
+                                type : 'category',
+                                data : ['2013','2014','2015']
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value'
+                            }
+                        ],
+                        series : [
+                            {
+                                name:'羅湖',
+                                type:'bar',
+                                barWidth : 20,
+                                data:[92101,87147,83207],
 
-        },{
-            name:'落馬洲支線',
-            type:'bar',
-            barWidth : 20,
-            data:[46670,54676,61939],
-                        
-            markLine : {
-                lineStyle: {
-                    normal: {
-                        type: 'dashed'
-                    }
-                },
-                
-                data : [
-                    [{type : 'min'}, {type : 'max'}]
-                ]
-            }
-        },{
-            name:'香港國際機場',
-            type:'bar',
-            barWidth : 20,
-            data:[40950,43231,46319],
-                        
-            markLine : {
-                lineStyle: {
-                    normal: {
-                        type: 'dashed'
-                    }
-                },
-                
-                data : [
-                    [{type : 'min'}, {type : 'max'}]
-                ]
-            }
-        },{
-            name:'深圳灣',
-            type:'bar',
-            barWidth : 20,
-            data:[32450,37212,37687]
-        },{
-            name:'落馬洲',
-            type:'bar',
-            barWidth : 20,
-            data:[28434,28543,28466]
-        },{
+                                markLine : {
+                                    lineStyle: {
+                                        normal: {
+                                            type: 'dashed'
+                                        }
+                                    },
 
-            name:'文錦渡',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[1174,3692,3996]
-        },{
-            name:'沙頭角',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[3395,3215,3132]
-        },{
-            name:'紅磡車站',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[4453,4481,4215]
-        },{
+                                    data : [
+                                        [{type : 'max'}, {type : 'min'}]
+                                    ]
+                                }
 
-            name:'港澳碼頭',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[17694,17707,17428]
-        },{
-            name:'中港碼頭',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[8696,9076,8506]
-        },{
-            name:'其他客運碼頭',
-            type:'bar',
-            barWidth : 10,
-            stack: '羅湖',
-            data:[1387,1577,1725]
-        },
-        ]
-};
-myChart.setOption(option);
-    </script>
+                            },{
+                                name:'落馬洲支線',
+                                type:'bar',
+                                barWidth : 20,
+                                data:[46670,54676,61939],
+
+                                markLine : {
+                                    lineStyle: {
+                                        normal: {
+                                            type: 'dashed'
+                                        }
+                                    },
+
+                                    data : [
+                                        [{type : 'min'}, {type : 'max'}]
+                                    ]
+                                }
+                            },{
+                                name:'香港國際機場',
+                                type:'bar',
+                                barWidth : 20,
+                                data:[40950,43231,46319],
+
+                                markLine : {
+                                    lineStyle: {
+                                        normal: {
+                                            type: 'dashed'
+                                        }
+                                    },
+
+                                    data : [
+                                        [{type : 'min'}, {type : 'max'}]
+                                    ]
+                                }
+                            },{
+                                name:'深圳灣',
+                                type:'bar',
+                                barWidth : 20,
+                                data:[32450,37212,37687]
+                            },{
+                                name:'落馬洲',
+                                type:'bar',
+                                barWidth : 20,
+                                data:[28434,28543,28466]
+                            },{
+
+                                name:'文錦渡',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[1174,3692,3996]
+                            },{
+                                name:'沙頭角',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[3395,3215,3132]
+                            },{
+                                name:'紅磡車站',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[4453,4481,4215]
+                            },{
+
+                                name:'港澳碼頭',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[17694,17707,17428]
+                            },{
+                                name:'中港碼頭',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[8696,9076,8506]
+                            },{
+                                name:'其他客運碼頭',
+                                type:'bar',
+                                barWidth : 10,
+                                stack: '羅湖',
+                                data:[1387,1577,1725]
+                            },
+                            ]
+                    };
+                myChart.setOption(option);
+                    </script>
                </div>                
         </div>
     </section>
